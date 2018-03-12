@@ -1,0 +1,11 @@
+感谢您注册 Eric's Lab 账户
+
+要完成注册流程，请点击以下链接来验证您的电子邮件地址:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+顺颂商祺,
+
+Eric
+
+提醒： 请勿回复此邮件。
