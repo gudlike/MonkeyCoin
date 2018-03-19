@@ -1,5 +1,5 @@
 #coding=utf-8
-from flask import request, jsonify
+from flask import request, jsonify, redirect
 from flask_login import login_required, current_user
 from . import main
 from .. import db
@@ -48,4 +48,7 @@ def get_articles():
         result['info'] = '获取文章失败'
     return jsonify(result)
 
-
+@main.route('/', methods=['GET'])
+def main_page():
+    # redirect to the frontend html.
+    return redirect('/static/index.html')
