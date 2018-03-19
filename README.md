@@ -53,6 +53,6 @@ $ npm start
 ```bash
 $ cd {project_root}/client
 $ npm run build
-# 适用于前端代码调试完成后，打包到{project_root}/server/static目录下再commit
+# 适用于前端代码调试完成后，打包到{project_root}/server/static目录下再commit.
 
 ```
