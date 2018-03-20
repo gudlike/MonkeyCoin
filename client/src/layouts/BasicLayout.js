@@ -159,10 +159,10 @@ class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { location } = this.props;
     const { pathname } = location;
-    let title = "Eric's Lab";
+    let title = "MonkeyCoin";
     getRouteData('UserLayout').forEach((item) => {
       if (item.path === pathname) {
-        title = `${item.name} - Eric's Lab`;
+        title = `${item.name} - MonkeyCoin`;
       }
     });
     return title;
@@ -258,7 +258,7 @@ class BasicLayout extends React.PureComponent {
           <div className={styles.logo}>
             <Link to="/">
               <img src="https://gw.alipayobjects.com/zos/rmsportal/iwWyPinUoseUxIAeElSx.svg" alt="logo" />
-              <h1>Eric's Lab</h1>
+              <h1>MonkeyCoin</h1>
             </Link>
           </div>
           <Menu
@@ -366,7 +366,7 @@ class BasicLayout extends React.PureComponent {
               }]}
               copyright={
                 <div>
-                  Copyright <Icon type="copyright" /> 2017 Eric Web实验基地出品
+                  Copyright <Icon type="copyright" /> MonkeyCoin 站长出品
                 </div>
               }
             />
